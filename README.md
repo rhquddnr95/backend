@@ -1,6 +1,9 @@
 ### # 핵심 포인트
 요구사항이 빈번하게 변화하는 신규 서비스 환경에서 변경에 유연하고 데이터의 신뢰성을 보장하는 구조를 설계하는 데 집중했습니다.
 
+<img width="1024" height="1536" alt="readme" src="https://github.com/user-attachments/assets/4d13c6bb-52d1-43a7-86be-f81e2b5811e7" />
+
+
 ### 🏗️ 변화에 대응하는 OCP(Open-Closed Principle)
 * **문제 상황**: 서비스 초기 단계라 회원 등급별 할인 정책이 수시로 추가되거나, 변동성이 매우 큽니다. 
 * **해결 방안**: 결제 서비스(PaymentService)가 구체적인 할인 로직을 직접 들고 있지 않게 설계했습니다. 대신 DiscountPolicy라는 인터페이스를 두고, 각 등급별 로직을 별도 클래스로 격리했습니다. 
